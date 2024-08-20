@@ -68,9 +68,7 @@ const LoginPage: React.FC = () => {
           toast.error(response.data.signIn.message);
           setLoading(false);
         } else {
-          toast.error(
-            "Could not login user at this time, please try again later"
-          );
+          toast.error("Could process request, please try again later");
           setLoading(false);
         }
       }
